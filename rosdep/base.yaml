@@ -1899,6 +1899,7 @@ libtiff-dev:
     saucy: [libtiff5-dev]
     trusty: [libtiff5-dev]
     trusty_python3: [libtiff5-dev]
+    utopic: [libtiff5-dev]
 libtiff4-dev:
   arch: [libtiff]
   debian: [libtiff4-dev]
