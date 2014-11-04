@@ -647,6 +647,7 @@ gazebo:
     raring: [gazebo]
     saucy: [gazebo2]
     trusty: [gazebo2]
+    utopic: [gazebo]
 gcc-avr:
   arch: [avr-gcc]
   debian: [gcc-avr]
