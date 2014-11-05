@@ -395,6 +395,7 @@ python-gst:
     raring: [python-gst0.10]
     saucy: [python-gst0.10]
     trusty: [python-gst0.10]
+    utopic: [python-gst0.10]
 python-gtk2:
   arch: [pygtk]
   debian: [python-gtk2]
@@ -536,16 +537,7 @@ python-mechanize:
   arch: [python2-mechanize]
   debian: [python-mechanize]
   fedora: [python-mechanize]
-  ubuntu:
-    lucid: [python-mechanize]
-    maverick: [python-mechanize]
-    natty: [python-mechanize]
-    oneiric: [python-mechanize]
-    precise: [python-mechanize]
-    quantal: [python-mechanize]
-    raring: [python-mechanize]
-    saucy: [python-mechanize]
-    trusty: [python-mechanize]
+  ubuntu: [python-mechanize]
 python-mock:
   debian: [python-mock]
   fedora: [python-mock]
