@@ -1563,7 +1563,7 @@ libpcl-all:
       packages: [pcl]
   macports: [libpcl]
   opensuse: [pcl]
-  ubuntu: [libpcl-1.7-all]
+  ubuntu: [libpcl-1.7-all-dev]
 libpcl-all-dev:
   arch: [pcl]
   fedora: [pcl-devel]
