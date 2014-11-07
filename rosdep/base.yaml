@@ -1180,6 +1180,7 @@ libglew-dev:
     raring: [libglew-dev]
     saucy: [libglew-dev]
     trusty: [libglew-dev]
+    utopic: [libglew-dev]
 libglib-dev:
   arch: [glib2]
   debian: [libglib2.0-dev]
