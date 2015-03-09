@@ -838,6 +838,7 @@ python-pygraphviz:
     raring: [python-pygraphviz]
     saucy: [python-pygraphviz]
     trusty: [python-pygraphviz]
+    utopic: [python-pygraphviz]
 python-pylint:
   debian: [pylint]
   fedora: [pylint]
@@ -1341,6 +1342,7 @@ python-tk:
     saucy: [python-tk]
     trusty: [python-tk]
     trusty_python3: [python3-tk]
+    utopic: [python-tk]
 python-tornado:
   debian:
     pip:
