@@ -3,19 +3,24 @@
 from __future__ import print_function
 
 
-from io import BytesIO
+try:
+    from cStringIO import StringIO
+except ImportError:
+    from io import StringIO
 import os
 import subprocess
 import yaml
 from yaml.composer import Composer
 from yaml.constructor import Constructor
-import pprint
 import sys
 import unittest
 
 import rosdistro
 import unidiff
 from urlparse import urlparse
+
+# for commented debugging code below
+# import pprint
 
 DIFF_TARGET = 'origin/master'
 EOL_DISTROS = ['groovy']
@@ -51,8 +56,11 @@ def detect_lines(diffstr):
     """Take a diff string and return a dict of
     files with line numbers changed"""
     resultant_lines = {}
-    io = BytesIO(diffstr)
-    udiff = unidiff.parser.parse_unidiff(io)
+    # diffstr is already utf-8 encoded
+    io = StringIO(diffstr)
+    # Force utf-8 re: https://github.com/ros/rosdistro/issues/6637
+    encoding = 'utf-8'
+    udiff = unidiff.PatchSet(io, encoding)
     for file in udiff:
         target_lines = []
         # if file.path in TARGET_FILES:
@@ -63,8 +71,9 @@ def detect_lines(diffstr):
     return resultant_lines
 
 
-def check_git_remote_exists(url, version):
-    """ Check if the remote exists and has the branch version """
+def check_git_remote_exists(url, version, tags_valid=False):
+    """ Check if the remote exists and has the branch version.
+    If tags_valid is True query tags as well as branches """
     cmd = ('git ls-remote %s refs/heads/*' % url).split()
 
     try:
@@ -77,17 +86,30 @@ def check_git_remote_exists(url, version):
 
     if 'refs/heads/%s' % version in output:
         return True
+
+    # If tags are valid. query for all tags and test for version
+    if not tags_valid:
+        return False
+    cmd = ('git ls-remote %s refs/tags/*' % url).split()
+
+    try:
+        output = subprocess.check_output(cmd)
+    except:
+        return False
+
+    if 'refs/tags/%s' % version in output:
+        return True
     return False
 
 
-def check_source_repo_entry_for_errors(source):
+def check_source_repo_entry_for_errors(source, tags_valid=False):
     if source['type'] != 'git':
         print("Cannot verify remote of type[%s] from line [%s] skipping."
               % (source['type'], source['__line__']))
         return None
 
     version = source['version'] if source['version'] else None
-    if not check_git_remote_exists(source['url'], version):
+    if not check_git_remote_exists(source['url'], version, tags_valid):
         return ("Could not validate repository with url %s and version %s from"
                 " entry at line '''%s'''" % (source['url'],
                                              version,
@@ -103,7 +125,7 @@ def check_repo_for_errors(repo):
             errors.append("Could not validate source entry for repo %s with error [[[%s]]]" %
                           (repo['repo'], source_errors))
     if 'doc' in repo:
-        source_errors = check_source_repo_entry_for_errors(repo['doc'])
+        source_errors = check_source_repo_entry_for_errors(repo['doc'], tags_valid=True)
         if source_errors:
             errors.append("Could not validate doc entry for repo %s with error [[[%s]]]" %
                           (repo['repo'], source_errors))
@@ -173,7 +195,7 @@ def isolate_yaml_snippets_from_line_numbers(yaml_dict, line_numbers):
                 print("not a dict %s %s" % (name, values))
                 continue
             # print("comparing to repo %s values %s" % (name, values))
-            if values['__line__'] < dl:
+            if values['__line__'] <= dl:
                 if match and match['__line__'] > values['__line__']:
                     continue
                 match = values
@@ -204,6 +226,8 @@ def main():
         data = load_yaml_with_lines(path)
 
         repos = data['repositories']
+        if not repos:
+            continue
 
         changed_repos = isolate_yaml_snippets_from_line_numbers(repos, lines)
 
