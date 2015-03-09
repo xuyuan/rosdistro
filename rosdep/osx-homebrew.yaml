@@ -58,6 +58,10 @@ cppunit:
   osx:
     homebrew:
       packages: [cppunit]
+crypto++:
+  osx:
+    homebrew:
+      packages: [cryptopp]
 curl:
   osx:
     homebrew:
@@ -84,6 +88,10 @@ flex:
     homebrew:
       packages: []
 fltk:
+  osx:
+    homebrew:
+      packages: [fltk]
+fluid:
   osx:
     homebrew:
       packages: [fltk]
@@ -114,7 +122,7 @@ git:
 glut:
   osx:
     homebrew:
-      packages: []
+      packages: [freeglut]
 gperftools:
   osx:
     homebrew:
@@ -151,6 +159,10 @@ libdc1394-dev:
   osx:
     homebrew:
       packages: [libdc1394]
+libdmtx-dev:
+  osx:
+    homebrew:
+      packages: [libdmtx]
 libflann:
   osx:
     homebrew:
@@ -159,6 +171,10 @@ libflann-dev:
   osx:
     homebrew:
       packages: [flann]
+libfltk-dev:
+  osx:
+    homebrew:
+      packages: [fltk]
 libftdi-dev:
   osx:
     homebrew:
@@ -211,6 +227,10 @@ libopenni-sensor-primesense-dev:
   osx:
     homebrew:
       packages: [totakke/openni/sensor-kinect]
+libopenni2-dev:
+  osx:
+    homebrew:
+      packages: [openni2]
 libpcap:
   osx:
     homebrew:
@@ -336,8 +356,12 @@ libv4l-dev:
 libvtk:
   osx:
     homebrew:
-      options: [--python, --qt]
+      options: [--with-qt]
       packages: [vtk]
+libvtk-java:
+  osx:
+    homebrew:
+      packages: []
 libx11:
   osx:
     homebrew:
@@ -470,6 +494,10 @@ python-kitchen:
   osx:
     pip:
       packages: [kitchen]
+python-lxml:
+  osx:
+    pip:
+      packages: [lxml]
 python-matplotlib:
   osx:
     pip:
@@ -560,6 +588,10 @@ python-support:
   osx:
     pip:
       packages: []
+python-vtk:
+  osx:
+    homebrew:
+      depends: [libvtk]
 python-yaml:
   osx:
     pip:
@@ -574,7 +606,7 @@ rake:
     homebrew:
       packages: []
 redis-server:
-  ox:
+  osx:
     homebrew:
       packages: [redis]
 ruby:
