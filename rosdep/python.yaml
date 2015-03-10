@@ -274,6 +274,7 @@ python-crypto:
     raring: [python-crypto]
     saucy: [python-crypto]
     trusty: [python-crypto]
+    utopic: [python-crypto]
 python-cwiid:
   arch: [cwiid]
   debian: [python-cwiid]
