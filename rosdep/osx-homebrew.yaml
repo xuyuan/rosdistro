@@ -107,6 +107,10 @@ gazebo:
   osx:
     homebrew:
       packages: [gazebo]
+gazebo5:
+  osx:
+    homebrew:
+      packages: [osrf/simulation/gazebo5]
 gccxml:
   osx:
     homebrew:
@@ -183,6 +187,10 @@ libftgl-dev:
   osx:
     homebrew:
       packages: [ftgl]
+libgazebo5-dev:
+  osx:
+    homebrew:
+      depends: [gazebo5]
 libglew-dev:
   osx:
     homebrew:
@@ -241,22 +249,26 @@ libpcl-all:
       depends: [libpcl-all-dev]
 libpcl-all-dev:
   osx:
+    "el capitan":
+      homebrew:
+        install_flags: [--HEAD]
+        packages: [homebrew/science/pcl]
     leopard:
-      homebrew: [pcl]
+      homebrew: [homebrew/science/pcl]
     lion:
-      homebrew: [pcl]
+      homebrew: [homebrew/science/pcl]
     mavericks:
       homebrew:
         install_flags: [--HEAD]
-        packages: [pcl]
+        packages: [homebrew/science/pcl]
     "mountain lion":
-      homebrew: [pcl]
+      homebrew: [homebrew/science/pcl]
     snow:
-      homebrew: [pcl]
+      homebrew: [homebrew/science/pcl]
     yosemite:
       homebrew:
         install_flags: [--HEAD]
-        packages: [pcl]
+        packages: [homebrew/science/pcl]
 libpgm:
   osx:
     homebrew:
@@ -410,6 +422,10 @@ mongodb-dev:
   osx:
     homebrew:
       packages: [mongodb-dev]
+mplayer:
+  osx:
+    homebrew:
+      packages: [mplayer]
 netcdf:
   osx:
     homebrew:
@@ -447,6 +463,10 @@ openmpi:
     homebrew:
       packages: [open-mpi]
 pcre:
+  osx:
+    homebrew:
+      packages: [pcre++]
+pcre-dev:
   osx:
     homebrew:
       packages: [pcre++]
