@@ -202,6 +202,7 @@ python-beautifulsoup:
     raring: [python-beautifulsoup]
     saucy: [python-beautifulsoup]
     trusty: [python-beautifulsoup]
+    wily: [python-beautifulsoup]
 python-bloom:
   fedora: [python-bloom]
   ubuntu:
@@ -211,6 +212,7 @@ python-bloom:
     saucy: [python-bloom]
     trusty: [python-bloom]
     trusty_python3: [python3-bloom]
+    wily: [python-bloom]
 python-bluez:
   arch: [python-pybluez]
   debian: [python-bluez]
@@ -320,6 +322,7 @@ python-clearsilver:
     raring: [python-clearsilver]
     saucy: [python-clearsilver]
     trusty: [python-clearsilver]
+    wily: [python-clearsilver]
 python-click:
   osx:
     pip:
@@ -351,6 +354,7 @@ python-couchdb:
     raring: [python-couchdb]
     saucy: [python-couchdb]
     trusty: [python-couchdb]
+    wily: [python-couchdb]
 python-coverage:
   debian: [python-coverage]
   fedora: [python-coverage]
@@ -433,6 +437,7 @@ python-dateutil:
     raring: [python-dateutil]
     saucy: [python-dateutil]
     trusty: [python-dateutil]
+    wily: [python-dateutil]
 python-deap-pip:
   debian:
     pip: [deap]
@@ -508,6 +513,7 @@ python-enum:
     raring: [python-enum]
     saucy: [python-enum]
     trusty: [python-enum]
+    wily: [python-enum]
 python-enum34:
   fedora: [python-enum34]
   ubuntu: [python-enum34]
@@ -529,6 +535,7 @@ python-espeak:
     saucy: [python-espeak]
     trusty: [python-espeak]
     trusty_python3: [python3-espeak]
+    wily: [python-espeak]
 python-evdev:
   ubuntu:
     trusty: [python-evdev]
@@ -544,6 +551,7 @@ python-flake8:
   ubuntu:
     trusty: [python-flake8]
     trusty_python3: [python3-flake8]
+    wily: [python-flake8]
 python-flask:
   debian: [python-flask]
   fedora: [python-flask]
@@ -558,6 +566,7 @@ python-flask:
     saucy: [python-flask]
     trusty: [python-flask]
     trusty_python3: [python3-flask]
+    wily: [python-flask]
 python-flask-restful:
   ubuntu:
     pip:
@@ -603,6 +612,7 @@ python-gridfs:
     saucy: [python-gridfs]
     trusty: [python-gridfs]
     trusty_python3: [python3-gridfs]
+    wily: [python-gridfs]
 python-gst:
   arch: [gstreamer0.10-python]
   debian: [python-gst0.10]
@@ -639,6 +649,7 @@ python-gtk2:
     raring: [python-gtk2]
     saucy: [python-gtk2]
     trusty: [python-gtk2]
+    wily: [python-gtk2]
 python-h5py:
   debian: [python-h5py]
   fedora: [h5py]
@@ -666,6 +677,7 @@ python-httplib2:
     saucy: [python-httplib2]
     trusty: [python-httplib2]
     trusty_python3: [python3-httplib2]
+    wily: [python-httplib2]
 python-imaging:
   arch: [python2-pillow]
   debian: [python-imaging]
@@ -761,6 +773,7 @@ python-libpcap:
     raring: [python-libpcap]
     saucy: [python-libpcap]
     trusty: [python-libpcap]
+    wily: [python-libpcap]
 python-libpgm-pip:
   osx:
     pip:
@@ -823,6 +836,7 @@ python-mechanize:
     raring: [python-mechanize]
     saucy: [python-mechanize]
     trusty: [python-mechanize]
+    wily: [python-mechanize]
 python-mock:
   debian: [python-mock]
   fedora: [python-mock]
@@ -851,6 +865,7 @@ python-msgpack:
     saucy: [msgpack-python]
     trusty: [python-msgpack]
     trusty_python3: [python3-msgpack]
+    wily: [python-msgpack]
 python-multicast:
   fedora:
     pip: [py-multicast]
@@ -926,6 +941,7 @@ python-networkx:
     saucy: [python-networkx]
     trusty: [python-networkx]
     trusty_python3: [python3-networkx]
+    wily: [python-networkx]
 python-nose:
   arch: [python2-nose]
   debian: [python-nose]
@@ -1000,6 +1016,7 @@ python-opencv:
   ubuntu:
     saucy: [python-opencv]
     trusty: [python-opencv]
+    wily: [python-opencv]
 python-opengl:
   debian: [python-opengl]
   fedora: [PyOpenGL]
@@ -1033,6 +1050,7 @@ python-pandas:
     raring: [python-pandas]
     saucy: [python-pandas]
     trusty: [python-pandas]
+    wily: [python-pandas]
 python-paramiko:
   arch: [python2-paramiko]
   debian: [python-paramiko]
@@ -1115,6 +1133,7 @@ python-pexpect:
     saucy: [python-pexpect]
     trusty: [python-pexpect]
     trusty_python3: [python3-pexpect]
+    wily: [python-pexpect]
 python-planar-pip:
   ubuntu:
     pip:
@@ -1172,6 +1191,7 @@ python-psycopg2:
     saucy: [python-psycopg2]
     trusty: [python-psycopg2]
     trusty_python3: [python3-psycopg2]
+    wily: [python-psycopg2]
 python-pyassimp:
   debian:
     wheezy: [python-pyassimp]
@@ -1302,6 +1322,7 @@ python-pylint:
     raring: [pylint]
     saucy: [pylint]
     trusty: [pylint]
+    wily: [pylint]
 python-pymavlink:
   fedora:
     pip:
@@ -1317,6 +1338,7 @@ python-pymodbus:
     raring: [python-pymodbus]
     saucy: [python-pymodbus]
     trusty: [python-pymodbus]
+    wily: [python-pymodbus]
 python-pymongo:
   debian: [python-pymongo]
   fedora: [python-pymongo]
@@ -1421,6 +1443,7 @@ python-pyudev:
     saucy: [python-pyudev]
     trusty: [python-pyudev]
     trusty_python3: [python3-pyudev]
+    wily: [python-pyudev]
 python-pyuserinput:
   ubuntu:
     pip:
@@ -1522,6 +1545,7 @@ python-qwt5-qt4:
     raring: [python-qwt5-qt4]
     saucy: [python-qwt5-qt4]
     trusty: [python-qwt5-qt4]
+    wily: [python-qwt5-qt4]
 python-rdflib:
   debian: [python-rdflib]
   fedora: [python-rdflib]
@@ -1535,6 +1559,7 @@ python-rdflib:
     raring: [python-rdflib]
     saucy: [python-rdflib]
     trusty: [python-rdflib]
+    wily: [python-rdflib]
 python-redis:
   debian: [python-redis]
   fedora: [python-redis]
@@ -1548,6 +1573,7 @@ python-redis:
     raring: [python-redis]
     saucy: [python-redis]
     trusty: [python-redis]
+    wily: [python-redis]
 python-redis-pip:
   ubuntu:
     pip:
@@ -1615,6 +1641,7 @@ python-rosdistro:
     saucy: [python-rosdistro]
     trusty: [python-rosdistro]
     trusty_python3: [python3-rosdistro]
+    wily: [python-rosdistro]
 python-rosinstall:
   arch: [python2-rosinstall]
   fedora: [python-rosinstall]
@@ -1630,6 +1657,7 @@ python-rosinstall:
     saucy: [python-rosinstall]
     trusty: [python-rosinstall]
     trusty_python3: [python3-rosinstall]
+    wily: [python-rosinstall]
 python-rosinstall-generator:
   arch: [python2-rosinstall-generator]
   fedora: [python-rosinstall_generator]
@@ -1645,6 +1673,7 @@ python-rosinstall-generator:
     saucy: [python-rosinstall-generator]
     trusty: [python-rosinstall-generator]
     trusty_python3: [python3-rosinstall-generator]
+    wily: [python-rosinstall-generator]
 python-rospkg:
   arch: [python2-rospkg]
   debian: [python-rospkg]
@@ -1677,6 +1706,7 @@ python-rrdtool:
     raring: [python-rrdtool]
     saucy: [python-rrdtool]
     trusty: [python-rrdtool]
+    wily: [python-rrdtool]
 python-scapy:
   debian: [python-scapy]
   fedora: [scapy]
@@ -1690,6 +1720,7 @@ python-scapy:
     raring: [python-scapy]
     saucy: [python-scapy]
     trusty: [python-scapy]
+    wily: [python-scapy]
 python-scipy:
   arch: [python2-scipy]
   debian: [python-scipy]
@@ -1892,6 +1923,7 @@ python-sqlalchemy:
     saucy: [python-sqlalchemy]
     trusty: [python-sqlalchemy]
     trusty_python3: [python3-sqlalchemy]
+    wily: [python-sqlalchemy]
 python-support:
   debian: [python-support]
   fedora: [python]
@@ -1910,6 +1942,7 @@ python-svn:
     raring: [python-svn]
     saucy: [python-svn]
     trusty: [python-svn]
+    wily: [python-svn]
 python-sympy:
   debian: [python-sympy]
   fedora: [sympy]
@@ -1923,6 +1956,7 @@ python-sympy:
     raring: [python-sympy]
     saucy: [python-sympy]
     trusty: [python-sympy]
+    wily: [python-sympy]
 python-termcolor:
   debian:
     pip:
@@ -2057,6 +2091,7 @@ python-twisted-bin:
     raring: [python-twisted-bin]
     saucy: [python-twisted-bin]
     trusty: [python-twisted-bin]
+    wily: [python-twisted-bin]
 python-twisted-core:
   debian: [python-twisted-core]
   fedora: [python-twisted-core]
@@ -2070,6 +2105,7 @@ python-twisted-core:
     raring: [python-twisted-core]
     saucy: [python-twisted-core]
     trusty: [python-twisted-core]
+    wily: [python-twisted-core]
 python-twisted-web:
   debian: [python-twisted-web]
   fedora: [python-twisted-web]
@@ -2083,6 +2119,7 @@ python-twisted-web:
     raring: [python-twisted-web]
     saucy: [python-twisted-web]
     trusty: [python-twisted-web]
+    wily: [python-twisted-web]
 python-twitter:
   fedora: [python-twitter]
   ubuntu:
@@ -2095,6 +2132,7 @@ python-twitter:
     raring: [python-twitter]
     saucy: [python-twitter]
     trusty: [python-twitter]
+    wily: [python-twitter]
 python-ujson:
   debian:
     pip:
@@ -2120,6 +2158,7 @@ python-urlgrabber:
     raring: [python-urlgrabber]
     saucy: [python-urlgrabber]
     trusty: [python-urlgrabber]
+    wily: [python-urlgrabber]
 python-usb:
   debian: [python-usb]
   fedora: [pyusb]
@@ -2133,6 +2172,7 @@ python-usb:
     raring: [python-usb]
     saucy: [python-usb]
     trusty: [python-usb]
+    wily: [python-usb]
 python-validictory-pip:
   ubuntu:
     pip:
@@ -2204,6 +2244,7 @@ python-wstool:
     saucy: [python-wstool]
     trusty: [python-wstool]
     trusty_python3: [python-wstool]
+    wily: [python-wstool]
 python-wtforms:
   fedora: [python-wtforms]
   ubuntu: [python-wtforms]
