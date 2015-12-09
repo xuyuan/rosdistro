@@ -130,6 +130,9 @@ assimp:
     vivid:
       apt:
         packages: [libassimp-dev]
+    wily:
+      apt:
+        packages: [libassimp-dev]
 assimp-dev:
   arch: [assimp]
   debian:
@@ -174,6 +177,9 @@ assimp-dev:
       apt:
         packages: [libassimp-dev]
     vivid:
+      apt:
+        packages: [libassimp-dev]
+    wily:
       apt:
         packages: [libassimp-dev]
 atlas:
@@ -340,6 +346,9 @@ boost:
     vivid:
       apt:
         packages: [libboost-all-dev]
+    wily:
+      apt:
+        packages: [libboost-all-dev]
 box2d-dev:
   arch: [box2d]
   debian: [libbox2d-dev]
@@ -381,6 +390,9 @@ bullet:
     vivid:
       apt:
         packages: [libbullet-dev]
+    wily:
+      apt:
+        packages: [libbullet-dev]
 bzip2:
   arch: [bzip2]
   cygwin: [bzip2]
@@ -403,6 +415,7 @@ can-utils:
     trusty: [can-utils]
     utopic: [can-utils]
     vivid: [can-utils]
+    wily: [can-utils]
 catkin_pkg:
   gentoo:
     portage:
@@ -656,6 +669,7 @@ ffmpeg:
     trusty: [libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
     utopic: [libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
     vivid: [libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
+    wily: [libavcodec-dev, libavformat-dev, libavutil-dev, libswscale-dev]
 ffmpeg2theora:
   arch: [ffmpeg2theora]
   debian: [ffmpeg2theora]
@@ -668,7 +682,7 @@ flex:
   gentoo: [sys-devel/flex]
   macports: [flex]
   ubuntu: [flex]
-fltk:  # Consider using the libfltk-dev and fluid (fltk runtime) keys instead.
+fltk:
   arch: [fltk]
   debian: [libfltk1.1-dev]
   fedora: [fltk-devel, fltk-fluid]
@@ -688,6 +702,7 @@ fltk:  # Consider using the libfltk-dev and fluid (fltk runtime) keys instead.
     trusty: [fluid, libfltk1.1-dev]
     utopic: [fluid, libfltk1.3-dev]
     vivid: [fluid, libfltk1.3-dev]
+    wily: [fluid, libfltk1.3-dev]
 fluid:
   arch: [fltk]
   debian: [libfltk1.1-dev]
@@ -715,7 +730,8 @@ ftdi-eeprom:
   fedora: [libftdi-devel, libftdi-c++-devel]
   ubuntu: [ftdi-eeprom]
 g++-multilib:
-  fedora: [gcc-c++, glibc-devel, 'glibc-devel(%{__isa_name}-32)', glibc-static, 'glibc-static(%{__isa_name}-32)', libstdc++-devel, 'libstdc++-devel(%{__isa_name}-32)', libstdc++-static, 'libstdc++-static(%{__isa_name}-32)']
+  fedora: [gcc-c++, glibc-devel, 'glibc-devel(%{__isa_name}-32)', glibc-static, 'glibc-static(%{__isa_name}-32)',
+    libstdc++-devel, 'libstdc++-devel(%{__isa_name}-32)', libstdc++-static, 'libstdc++-static(%{__isa_name}-32)']
   gentoo: [sys-devel/multilib-gcc-wrapper]
   ubuntu: [g++-multilib]
 g++-static:
@@ -1028,7 +1044,7 @@ java:
     '22': [java-1.8.0-openjdk]
     beefy: [java-1.7.0-openjdk]
     heisenbug: [java-1.8.0-openjdk, java-1.7.0-openjdk]
-    schrödinger’s: [java-1.8.0-openjdk, java-1.7.0-openjdk]
+    "schr\xF6dinger\u2019s": [java-1.8.0-openjdk, java-1.7.0-openjdk]
     spherical: [java-1.7.0-openjdk]
   freebsd: [openjdk6]
   gentoo: [dev-java/sun-jdk]
@@ -1041,7 +1057,7 @@ joystick:
     '22': [linuxconsoletools]
     beefy: [joystick]
     heisenbug: [linuxconsoletools]
-    schrödinger’s: [linuxconsoletools]
+    "schr\xF6dinger\u2019s": [linuxconsoletools]
     spherical: [linuxconsoletools]
   gentoo: [games-util/joystick]
   opensuse: [input-utils]
@@ -1107,18 +1123,15 @@ libaria:
     jessie: [libaria-dev]
     sid: [libaria-dev]
     wheezy:
-      source:
-        md5sum: 589c387995beb951edd9c77f33cb2286
-        uri: 'https://raw.github.com/amor-ros-pkg/rosaria/master/libaria.rdmanifest'
+      source: {md5sum: 589c387995beb951edd9c77f33cb2286, uri: 'https://raw.github.com/amor-ros-pkg/rosaria/master/libaria.rdmanifest'}
   ubuntu:
     precise:
-      source:
-        md5sum: 589c387995beb951edd9c77f33cb2286
-        uri: 'https://raw.github.com/amor-ros-pkg/rosaria/master/libaria.rdmanifest'
+      source: {md5sum: 589c387995beb951edd9c77f33cb2286, uri: 'https://raw.github.com/amor-ros-pkg/rosaria/master/libaria.rdmanifest'}
     saucy: [libaria-dev]
     trusty: [libaria-dev]
     utopic: [libaria-dev]
     vivid: [libaria-dev]
+    wily: [libaria-dev]
 libasound2-dev:
   arch: [alsa-lib]
   fedora: [alsa-lib]
@@ -1204,6 +1217,7 @@ libconsole-bridge-dev:
     trusty: [libconsole-bridge-dev]
     utopic: [libconsole-bridge-dev]
     vivid: [libconsole-bridge-dev]
+    wily: [libconsole-bridge-dev]
 libdbus-dev:
   arch: [dbus-core]
   debian: [libdbus-1-dev]
@@ -1312,6 +1326,7 @@ libfltk-dev:
     trusty: [libfltk1.1-dev]
     utopic: [libfltk1.3-dev]
     vivid: [libfltk1.3-dev]
+    wily: [libfltk1.3-dev]
 libfontconfig1-dev:
   fedora: [fontconfig-devel]
   ubuntu: [libfontconfig1-dev]
@@ -1376,6 +1391,7 @@ libglew-dev:
     trusty: [libglew-dev]
     utopic: [libglew-dev]
     vivid: [libglew-dev]
+    wily: [libglew-dev]
 libglib-dev:
   arch: [glib2]
   debian: [libglib2.0-dev]
@@ -1426,6 +1442,7 @@ libgphoto-dev:
     trusty: [libgphoto2-dev]
     utopic: [libgphoto2-dev]
     vivid: [libgphoto2-dev]
+    wily: [libgphoto2-dev]
 libgps:
   arch: [gpsd]
   debian: [libgps-dev]
@@ -1546,6 +1563,7 @@ libjpeg:
     trusty_python3: [libjpeg-dev]
     utopic: [libjpeg-dev]
     vivid: [libjpeg-dev]
+    wily: [libjpeg-dev]
 libjson-glib:
   arch: [json-glib]
   debian: [libjson-glib-dev]
@@ -1648,7 +1666,7 @@ libmysqlclient-dev:
     '22': [mariadb-devel]
     beefy: [mysql-devel]
     heisenbug: [mariadb-devel]
-    schrödinger’s: [mariadb-devel]
+    "schr\xF6dinger\u2019s": [mariadb-devel]
     spherical: [mysql-devel]
   gentoo:
     portage:
@@ -1725,6 +1743,7 @@ libogre-dev:
     trusty: [libogre-1.8-dev]
     utopic: [libogre-1.9-dev]
     vivid: [libogre-1.9-dev]
+    wily: [libogre-1.9-dev]
 libois-dev:
   arch: [ois]
   debian: [libois-dev]
@@ -1744,6 +1763,7 @@ libopencv-dev:
     trusty: [libopencv-dev]
     utopic: [libopencv-dev]
     vivid: [libopencv-dev]
+    wily: [libopencv-dev]
 libopenni-dev:
   arch: [openni]
   debian: [libopenni-dev]
@@ -1771,7 +1791,8 @@ libopenni2-dev:
   ubuntu: [libopenni2-dev]
 libopenscenegraph:
   arch: [openscenegraph]
-  debian: [openscenegraph, libopenscenegraph-dev, libopenscenegraph80, libopenthreads-dev, libopenthreads14]
+  debian: [openscenegraph, libopenscenegraph-dev, libopenscenegraph80, libopenthreads-dev,
+    libopenthreads14]
   fedora: [OpenSceneGraph, OpenSceneGraph-devel, OpenThreads, OpenThreads-devel]
   gentoo:
     portage:
@@ -1816,6 +1837,7 @@ libpcl-all:
     trusty: [libpcl-1.7-all]
     utopic: [libpcl1.7]
     vivid: [libpcl1.7]
+    wily: [libpcl1.7]
 libpcl-all-dev:
   arch: [pcl]
   fedora: [pcl-devel]
@@ -1832,6 +1854,7 @@ libpcl-all-dev:
     trusty: [libpcl-1.7-all-dev]
     utopic: [libpcl-dev]
     vivid: [libpcl-dev]
+    wily: [libpcl-dev]
 libpcsclite-dev:
   arch: [pcsclite]
   debian: [libpcsclite-dev]
@@ -1891,7 +1914,7 @@ libpq-dev:
     '22': [derelict-PQ-devel, postgresql-devel]
     beefy: [derelict-postgresql-devel, postgresql-devel]
     heisenbug: [derelict-postgresql-devel, postgresql-devel]
-    schrödinger’s: [derelict-postgresql-devel, postgresql-devel]
+    "schr\xF6dinger\u2019s": [derelict-postgresql-devel, postgresql-devel]
     spherical: [derelict-postgresql-devel, postgresql-devel]
   gentoo:
     portage:
@@ -1911,6 +1934,7 @@ libpqxx:
     trusty: [libpqxx-4.0]
     utopic: [libpqxx-4.0]
     vivid: [libpqxx-4.0]
+    wily: [libpqxx-4.0]
 libpqxx-dev:
   fedora: [libpqxx-devel]
   ubuntu:
@@ -1925,6 +1949,7 @@ libpqxx-dev:
     trusty: [libpqxx-dev]
     utopic: [libpqxx-dev]
     vivid: [libpqxx-dev]
+    wily: [libpqxx-dev]
 libpulse-dev:
   fedora: [pulseaudio-libs-devel]
   ubuntu: [libpulse-dev]
@@ -1956,6 +1981,7 @@ libqglviewer-qt4:
     trusty: [libqglviewer2]
     utopic: [libqglviewer2]
     vivid: [libqglviewer2]
+    wily: [libqglviewer2]
 libqglviewer-qt4-dev:
   arch: [libqglviewer-qt4]
   debian: [libqglviewer-qt4-dev]
@@ -1972,6 +1998,7 @@ libqglviewer-qt4-dev:
     trusty: [libqglviewer-dev]
     utopic: [libqglviewer-dev]
     vivid: [libqglviewer-dev]
+    wily: [libqglviewer-dev]
 libqhull:
   arch: [qhull]
   debian: [libqhull-dev]
@@ -2241,6 +2268,7 @@ libtiff-dev:
     trusty_python3: [libtiff5-dev]
     utopic: [libtiff5-dev]
     vivid: [libtiff5-dev]
+    wily: [libtiff5-dev]
 libtiff4-dev:
   arch: [libtiff]
   debian: [libtiff4-dev]
@@ -2276,6 +2304,7 @@ libtool:
     trusty: [libtool, libltdl-dev]
     utopic: [libtool, libltdl-dev, libtool-bin]
     vivid: [libtool, libltdl-dev, libtool-bin]
+    wily: [libtool, libltdl-dev, libtool-bin]
 libturbojpeg:
   fedora: [turbojpeg-devel]
   ubuntu: [libturbojpeg]
@@ -2322,6 +2351,7 @@ liburdfdom-dev:
     trusty: [liburdfdom-dev]
     utopic: [liburdfdom-dev]
     vivid: [liburdfdom-dev]
+    wily: [liburdfdom-dev]
 liburdfdom-headers-dev:
   arch: [urdfdom-headers]
   debian: [liburdfdom-headers-dev]
@@ -2332,6 +2362,7 @@ liburdfdom-headers-dev:
     trusty: [liburdfdom-headers-dev]
     utopic: [liburdfdom-headers-dev]
     vivid: [liburdfdom-headers-dev]
+    wily: [liburdfdom-headers-dev]
 liburdfdom-tools:
   debian: [liburdfdom-tools]
   fedora: [urdfdom]
@@ -2351,7 +2382,7 @@ libusb-1.0:
     '22': [libusbx]
     beefy: [libusb1]
     heisenbug: [libusbx]
-    schrödinger’s: [libusbx]
+    "schr\xF6dinger\u2019s": [libusbx]
     spherical: [libusbx]
   gentoo: [=dev-libs/libusb-1.0*]
   opensuse: [libusb-1_0-0]
@@ -2364,7 +2395,7 @@ libusb-1.0-dev:
     '22': [libusbx-devel]
     beefy: [libusb1-devel]
     heisenbug: [libusbx-devel]
-    schrödinger’s: [libusbx-devel]
+    "schr\xF6dinger\u2019s": [libusbx-devel]
     spherical: [libusbx-devel]
   gentoo: [=dev-libs/libusb-1.0*]
   macports: [libusb]
@@ -2411,6 +2442,7 @@ libvtk:
     trusty: [libvtk5-dev]
     utopic: [libvtk5-dev]
     vivid: [libvtk5-dev]
+    wily: [libvtk5-dev]
 libvtk-java:
   arch: [vtk]
   debian: [libvtk-java]
@@ -2425,6 +2457,7 @@ libvtk-java:
     trusty: [libvtk-java]
     utopic: [libvtk-java]
     vivid: [libvtk-java]
+    wily: [libvtk-java]
 libvtk-qt:
   arch: [vtk]
   debian: [libvtk5-qt4-dev]
@@ -2571,7 +2604,7 @@ lua-dev:
     '22': [compat-lua-devel]
     beefy: [lua-devel]
     heisenbug: [compat-lua-devel]
-    schrödinger’s: [lua-devel]
+    "schr\xF6dinger\u2019s": [lua-devel]
     spherical: [lua-devel]
   macports: [lua51]
   ubuntu: [liblua5.1-0-dev]
@@ -2585,6 +2618,7 @@ lz4:
     trusty: [liblz4-dev]
     utopic: [liblz4-dev]
     vivid: [liblz4-dev]
+    wily: [liblz4-dev]
 m4:
   arch: [m4]
   debian: [m4]
@@ -2642,6 +2676,7 @@ mongodb-dev:
     trusty: [libmongo-client-dev, mongodb-dev]
     utopic: [libmongo-client-dev]
     vivid: [libmongo-client-dev]
+    wily: [libmongo-client-dev]
 mono-devel:
   debian: [mono-devel]
   fedora: [mono-devel]
@@ -2672,6 +2707,7 @@ mrpt:
     trusty: [libmrpt-dev]
     utopic: [libmrpt-dev]
     vivid: [libmrpt-dev]
+    wily: [libmrpt-dev]
 muparser:
   fedora: [muParser-devel]
   ubuntu: [libmuparser-dev]
@@ -2749,22 +2785,29 @@ omniidl:
     trusty: [omniidl]
     utopic: [omniidl]
     vivid: [omniidl]
+    wily: [omniidl]
 omniorb:
   arch: [omniorb]
   debian:
-    etch: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
+    etch: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev,
+      libomnithread3-dev, libomnithread3c2]
     jessie: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
-    lenny: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
-    sarge: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
+    lenny: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev,
+      libomnithread3-dev, libomnithread3c2]
+    sarge: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev,
+      libomnithread3-dev, libomnithread3c2]
     sid: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
     squeeze: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
     wheezy: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
   fedora: [omniORB, omniORB-devel, omniORB-servers]
   macports: [omniORB]
   ubuntu:
-    lucid: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
-    maverick: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
-    natty: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev, libomnithread3-dev, libomnithread3c2]
+    lucid: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev,
+      libomnithread3-dev, libomnithread3c2]
+    maverick: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev,
+      libomnithread3-dev, libomnithread3c2]
+    natty: [omniorb4, omniidl4, omniorb4-nameserver, libomniorb4-1, libomniorb4-dev,
+      libomnithread3-dev, libomnithread3c2]
     oneiric: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
     precise: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
     quantal: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
@@ -2773,6 +2816,7 @@ omniorb:
     trusty: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
     utopic: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
     vivid: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
+    wily: [omniorb, omniidl, omniorb-nameserver, libomniorb4-dev]
 omniorb4-idl:
   arch: [omniorb]
   debian: [omniorb-idl]
@@ -2867,6 +2911,7 @@ postgresql-9.x-postgis:
     trusty: [postgresql-9.3-postgis-2.1, postgresql-contrib-9.3, postgresql-server-dev-9.3]
     utopic: [postgresql-9.4-postgis-2.1, postgresql-contrib-9.4, postgresql-server-dev-9.4]
     vivid: [postgresql-9.4-postgis-2.1, postgresql-contrib-9.4, postgresql-server-dev-9.4]
+    wily: [postgresql-9.4-postgis-2.1, postgresql-contrib-9.4, postgresql-server-dev-9.4]
 postgresql-client:
   fedora: [postgresql-client]
   ubuntu: [postgresql-client]
@@ -2890,6 +2935,7 @@ protobuf:
     trusty: [libprotobuf8]
     utopic: [libprotobuf8]
     vivid: [libprotobuf9]
+    wily: [libprotobuf9]
 protobuf-dev:
   arch: [protobuf]
   debian: [libprotobuf-dev, protobuf-compiler, libprotoc-dev]
@@ -3022,6 +3068,7 @@ ruby:
     trusty: [ruby1.9.1-dev, libruby1.9.1, ruby1.9.1]
     utopic: [ruby1.9.1-dev, libruby1.9.1, ruby1.9.1]
     vivid: [ruby1.9.1-dev, libruby1.9.1, ruby1.9.1]
+    wily: [ruby1.9.1-dev, libruby1.9.1, ruby1.9.1]
 ruby-sass:
   fedora: [rubygem-sass]
   ubuntu: [ruby-sass]
@@ -3358,7 +3405,7 @@ ttf-kochi-mincho:
 ttf-mscorefonts-installer:
   arch: [ttf-ms-fonts]
   debian: [ttf-mscorefonts-installer]
-  macports:
+  macports: null
 ttf-sazanami-gothic:
   arch: [ttf-sazanami]
   debian: [ttf-sazanami-gothic]
@@ -3435,8 +3482,7 @@ vlc:
 vrep:
   ubuntu:
     trusty:
-      source:
-        uri: 'https://raw.githubusercontent.com/peci1/vrep_ros_bridge/rdmanifest/vrep.rdmanifest'
+      source: {uri: 'https://raw.githubusercontent.com/peci1/vrep_ros_bridge/rdmanifest/vrep.rdmanifest'}
 wget:
   arch: [wget]
   debian: [wget]
@@ -3506,19 +3552,19 @@ xerces:
 xfont-server:
   debian: [xfs]
   fedora: [libXfont]
-  macports:
+  macports: null
   ubuntu:
     lucid: [xfs]
     precise: [xfs]
 xfonts-100dpi:
   debian: [xfonts-100dpi]
   fedora: [xorg-x11-fonts-100dpi]
-  macports:
+  macports: null
   ubuntu: [xfonts-100dpi]
 xfonts-75dpi:
   debian: [xfonts-75dpi]
   fedora: [xorg-x11-fonts-100dpi]
-  macports:
+  macports: null
   ubuntu: [xfonts-75dpi]
 xpath-perl:
   arch: [perl-xml-xpath]
@@ -3580,9 +3626,7 @@ yaml-cpp:
       apt:
         packages: [libyaml-cpp-dev]
     squeeze:
-      source:
-        md5sum: f7fb81fd4a2fbd5022daa7686e816359
-        uri: 'https://kforge.ros.org/rosrelease/viewvc/sourcedeps/yaml-cpp/yaml-cpp-0.2.5.rdmanifest'
+      source: {md5sum: f7fb81fd4a2fbd5022daa7686e816359, uri: 'https://kforge.ros.org/rosrelease/viewvc/sourcedeps/yaml-cpp/yaml-cpp-0.2.5.rdmanifest'}
     wheezy:
       apt:
         packages: [libyaml-cpp-dev]
@@ -3606,6 +3650,7 @@ yaml-cpp:
     trusty_python3: [libyaml-cpp-dev]
     utopic: [libyaml-cpp-dev]
     vivid: [libyaml-cpp-dev]
+    wily: [libyaml-cpp-dev]
 yasm:
   arch: [yasm]
   debian: [yasm]
