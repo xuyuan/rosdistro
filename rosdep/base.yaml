@@ -751,7 +751,7 @@ gazebo:
     raring: [gazebo]
     saucy: [gazebo2]
     trusty: [gazebo2]
-    wily: [gazebo2]
+    wily: [gazebo6]
 gazebo5:
   arch: [gazebo]
   fedora: [gazebo]
