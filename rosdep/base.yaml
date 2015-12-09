@@ -297,6 +297,7 @@ boost:
     sid: [libboost-all-dev]
     squeeze: [libboost1.42-all-dev]
     wheezy: [libboost-all-dev]
+    wily: [libboost-all-dev]
   fedora: [boost-devel]
   freebsd: [boost-python-libs]
   gentoo: [dev-libs/boost]
@@ -1739,11 +1740,7 @@ libopencv-dev:
   fedora: [opencv-devel]
   gentoo: [media-libs/opencv]
   macports: [opencv]
-  ubuntu:
-    saucy: [libopencv-dev]
-    trusty: [libopencv-dev]
-    utopic: [libopencv-dev]
-    vivid: [libopencv-dev]
+  ubuntu: [libopencv-dev]
 libopenni-dev:
   arch: [openni]
   debian: [libopenni-dev]
@@ -2317,11 +2314,7 @@ liburdfdom-dev:
   debian: [liburdfdom-dev]
   fedora: [urdfdom-devel]
   gentoo: [dev-libs/urdfdom]
-  ubuntu:
-    saucy: [liburdfdom-dev]
-    trusty: [liburdfdom-dev]
-    utopic: [liburdfdom-dev]
-    vivid: [liburdfdom-dev]
+  ubuntu: [liburdfdom-dev]
 liburdfdom-headers-dev:
   arch: [urdfdom-headers]
   debian: [liburdfdom-headers-dev]
