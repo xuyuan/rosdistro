@@ -815,6 +815,7 @@ python-mock:
     trusty_python3: [python3-mock]
     utopic: [python-mock]
     vivid: [python-mock]
+    wily: [python-mock]
 python-msgpack:
   debian: [python-msgpack]
   fedora: [python-msgpack]
@@ -920,6 +921,7 @@ python-nose:
     trusty_python3: [python3-nose]
     utopic: [python-nose]
     vivid: [python-nose]
+    wily: [python-nose]
 python-numpy:
   arch: [python2-numpy]
   debian: [python-numpy]
@@ -1605,6 +1607,7 @@ python-rospkg:
     trusty_python3: [python3-rospkg]
     utopic: [python-rospkg]
     vivid: [python-rospkg]
+    wily: [python-rospkg]
 python-rrdtool:
   ubuntu:
     lucid: [python-rrdtool]
@@ -1824,6 +1827,8 @@ python-sqlalchemy:
     saucy: [python-sqlalchemy]
     trusty: [python-sqlalchemy]
     trusty_python3: [python3-sqlalchemy]
+    wily: [python-sqlalchemy]
+    wily_python3: [python3-sqlalchemy]
 python-support:
   debian: [python-support]
   fedora: [python]
@@ -1842,6 +1847,7 @@ python-svn:
     raring: [python-svn]
     saucy: [python-svn]
     trusty: [python-svn]
+    wily: [python-svn]
 python-sympy:
   debian: [python-sympy]
   fedora: [sympy]
@@ -1855,6 +1861,7 @@ python-sympy:
     raring: [python-sympy]
     saucy: [python-sympy]
     trusty: [python-sympy]
+    wily: [python-sympy]
 python-termcolor:
   debian:
     pip:
@@ -1894,6 +1901,7 @@ python-termcolor:
     trusty_python3: [python3-termcolor]
     utopic: [python-termcolor]
     vivid: [python-termcolor]
+    wily: [python-termcolor]
 python-texttable:
   osx:
     pip:
@@ -1937,6 +1945,8 @@ python-tk:
     utopic_python3: [python3-tk]
     vivid: [python-tk]
     vivid_python3: [python3-tk]
+    wily: [python-tk]
+    wily_python3: [python3-tk]
 python-tornado:
   debian:
     pip:
@@ -1987,6 +1997,7 @@ python-twisted-bin:
     raring: [python-twisted-bin]
     saucy: [python-twisted-bin]
     trusty: [python-twisted-bin]
+    wily: [python-twisted-bin]
 python-twisted-core:
   debian: [python-twisted-core]
   fedora: [python-twisted-core]
@@ -2000,6 +2011,7 @@ python-twisted-core:
     raring: [python-twisted-core]
     saucy: [python-twisted-core]
     trusty: [python-twisted-core]
+    wily: [python-twisted-core]
 python-twisted-web:
   debian: [python-twisted-web]
   fedora: [python-twisted-web]
@@ -2013,6 +2025,7 @@ python-twisted-web:
     raring: [python-twisted-web]
     saucy: [python-twisted-web]
     trusty: [python-twisted-web]
+    wily: [python-twisted-web]
 python-twitter:
   fedora: [python-twitter]
   ubuntu:
@@ -2025,6 +2038,7 @@ python-twitter:
     raring: [python-twitter]
     saucy: [python-twitter]
     trusty: [python-twitter]
+    wily: [python-twitter]
 python-ujson:
   debian:
     pip:
@@ -2050,6 +2064,7 @@ python-urlgrabber:
     raring: [python-urlgrabber]
     saucy: [python-urlgrabber]
     trusty: [python-urlgrabber]
+    wily: [python-urlgrabber]
 python-usb:
   debian: [python-usb]
   fedora: [pyusb]
@@ -2063,6 +2078,7 @@ python-usb:
     raring: [python-usb]
     saucy: [python-usb]
     trusty: [python-usb]
+    wily: [python-usb]
 python-validictory-pip:
   ubuntu:
     pip:
@@ -2086,6 +2102,7 @@ python-vtk:
     trusty: [python-vtk]
     utopic: [python-vtk]
     vivid: [python-vtk]
+    wily: [python-vtk]
 python-walrus-pip:
   ubuntu:
     pip:
@@ -2133,6 +2150,7 @@ python-wstool:
     saucy: [python-wstool]
     trusty: [python-wstool]
     trusty_python3: [python-wstool]
+    wily: [python-wstool]
 python-wtforms:
   fedora: [python-wtforms]
   ubuntu: [python-wtforms]
@@ -2159,6 +2177,7 @@ python-yaml:
     trusty_python3: [python3-yaml]
     utopic: [python-yaml]
     vivid: [python-yaml]
+    wily: [python-yaml]
 python-zmq:
   debian: [python-zmq]
   fedora: [python-zmq]
@@ -2174,6 +2193,7 @@ python-zmq:
     trusty: [python-zmq]
     trusty_python3: [python3-zmq]
     vivid: [python-zmq]
+    wily: [python-zmq]
 xdot:
   fedora: [python-xdot]
   ubuntu: [xdot]
